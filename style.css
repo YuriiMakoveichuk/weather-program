@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #f4be94;
+    
+}
+.weather {
+    width: 500px;
+    height: 300px;
+    background-color:rgb(5 255 238 / 60%);
+    margin: 100px auto;
+    color: blue;
+}
+.weather-top {
+ height: 150px;
+}
+h1 {
+    color: #de00ff;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.weather-top-text {
+    display: flex;
+    align-items: center;
+}
+.weather-top-text-one {
+    width: 170px;
+    font-size: 20px;
+    text-align: center;
+    list-style-type: none;
+
+
+}
+.weather-top-text-two {
+    width: 160px;
+  
+    height: 60px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.weather-top-text-two img {
+    width: 50px;
+    height: 50px;
+    display: block;
+  
+}
+.weather-top-text-three {
+
+   
+    font-size: 18px;
+    width: 160px;
+    height: 60px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.weather-top-pack {
+    display: flex;
+    height: 40px;
+    align-items: center;
+   margin-left: 40px;
+}
+.weather-top-pack span {
+    margin-right: 10px;
+}
+.weather-top-pack-box {
+    display: flex;
+    padding: 0 30px;
+    list-style-type: none;
+}
+.weather-top-pack-wind {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/wind.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.weather-top-pack-humidity {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/humidity.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.weather-top-pack-meter {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(images/meter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.weather-button {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 22.5px;
+    margin-left: 22.5px;
+}
+.weather-button-text {
+width: 65px;
+text-align: center;
+color: white;
+margin-top: 10px;
+}
+.weather-button-text-img {
+    display: block;
+    height: 40px;
+    margin-bottom: 20px;
+}
