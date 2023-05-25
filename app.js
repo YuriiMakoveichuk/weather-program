@@ -1,7 +1,9 @@
 let city = prompt("Введіть назву міста ");
-let div = document.querySelector(".weather-top");
+
+let div = document.querySelector(".weather");
 let h1 = document.createElement("h1");
 h1.innerHTML = `${city}`;
+
 div.prepend(h1);
 
 fetch(
@@ -60,14 +62,15 @@ fetch(
     div.appendChild(li);
   });
 
-// .then((items) => {
-//   let div = document.querySelector(".weather-top-text-two");
-//   let img = document.createElement("img");
-//   let scr = document.createElement("scr");
-//   let scrImg = `http://openweathermap.org/img/w/${items.weather[0].icon}.png`;
-//   scr.innerHTML = scrImg;
-//   img.appendChild(scr);
-//   div.appendChild(img);
+fetch(
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=5d066958a60d315387d9492393935c19`
+)
+  .then((response) => response.json())
+  .then((items) => {
+    let div = document.querySelector(".weather-top-text-two");
+    let img = document.createElement("img");
+    let srcImg = `${items.weather[0].icon}`;
+    img.src = `https://openweathermap.org/img/w/${srcImg}.png`;
 
-//   console.log(div);
-// });
+    div.appendChild(img);
+  });
