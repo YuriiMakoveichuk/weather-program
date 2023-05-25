@@ -69,8 +69,7 @@ fetch(
   .then((items) => {
     let div = document.querySelector(".weather-top-text-two");
     let img = document.createElement("img");
-    let srcImg = `${items.weather[0].icon}`;
-    img.src = `https://openweathermap.org/img/w/${srcImg}.png`;
+    img.src = `https://openweathermap.org/img/w/${items.weather[0].icon}.png`;
 
     div.appendChild(img);
   });
